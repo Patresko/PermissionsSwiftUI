@@ -1,0 +1,10 @@
+/* MARK: Allow Button */
+"button_allow" = "TOESTAAN";
+"button_allowed" = "TOEGESTAAN";
+"button_denied" = "GEWEIGERD";
+"button_next" = "VOLGENDE";
+
+/* MARK: UI labels */
+"permission_header" = "Machtigingen vereist";
+"permission_primary_label" = "Om bepaalde functies van deze app te kunnen gebruiken, moet je toestemming geven. Bekijk de beschrijving bij elke toestemming.";
+"permission_secondary_label" = "Toestemmingen zijn vereist om alle functies en mogelijkheden goed te laten werken. Als deze niet zijn verleend, moet je ze inschakelen in de instellingen.";
