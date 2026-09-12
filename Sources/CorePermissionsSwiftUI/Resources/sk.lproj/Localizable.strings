@@ -3,3 +3,8 @@
 "button_allowed" = "POVOLENÉ";
 "button_denied" = "ZAMIETNUTÉ";
 "button_next" = "ĎALEJ";
+
+/* MARK: UI labels */
+"permission_header" = "Potrebné povolenia";
+"permission_primary_label" = "Aby ste mohli využívať určité funkcie tejto aplikácie, musíte udeliť príslušné povolenia. Pozrite si popis jednotlivých povolení.";
+"permission_secondary_label" = "Na správne fungovanie všetkých funkcií a vlastností sú potrebné príslušné povolenia. Ak nie sú udelené, musíte ich povoliť v nastaveniach.";
