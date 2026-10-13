@@ -13,7 +13,7 @@ struct ModalView: View {
     @EnvironmentObject var schemaStore: PermissionSchemaStore
 
     @Binding var showModal: Bool
-    var mainText: MainTexts{store.mainTexts.contentChanged ? store.mainTexts : store.configStore.mainTexts}
+    var mainText: MainTexts{store.configStore.mainTexts}
 
     var body: some View {
         ScrollView {
@@ -40,9 +40,7 @@ struct ModalView: View {
         .background(Color(.secondarySystemBackground))
         .edgesIgnoringSafeArea(.all)
         .introspectViewController{
-            if store.configStore.restrictDismissal ||
-                store.restrictAlertDismissal ||
-                store.restrictModalDismissal {
+            if store.configStore.restrictDismissal {
                 $0.isModalInPresentation = true
             }
         }

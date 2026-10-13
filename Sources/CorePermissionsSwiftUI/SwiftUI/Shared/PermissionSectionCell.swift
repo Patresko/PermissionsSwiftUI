@@ -133,16 +133,7 @@ struct PermissionSectionCell: View {
     }
     
     func handleCompletionDismissal() {
-        //Backward compatibility - autoDismissAlert, autoDismissModal, and autoDismiss are all acceptable ways to trigger condition
-            if shouldAutoDismiss &&
-                
-                //Current view style is alert and autoDismissAlert is true
-                ((schemaStore.permissionViewStyle == .alert &&
-                    store.autoDismissAlert) ||
-                //Current view style is modal and autoDismissModal is true
-                    (schemaStore.permissionViewStyle == .modal &&
-                        store.autoDismissModal)) &&
-                    store.configStore.autoDismiss {
+            if shouldAutoDismiss && store.configStore.autoDismiss {
                 DispatchQueue.main.asyncAfter(deadline: .now()+0.8) {
                     showing = false
                     guard let handler = store.configStore.onDisappearHandler else {return}
